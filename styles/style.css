@@ -33,7 +33,7 @@
 
 .address a {
     text-underline-offset: 4px;
-    text-decoration-thickness: 1.5px;
+    text-decoration-thickness: 1px;
     text-decoration-skip-ink: none;
 }
 
@@ -44,12 +44,12 @@
     max-width: 240px;
     font-size: 18px;
     font-style: normal;
-    line-height: 24px;
+    line-height: 1.33;
 }
 
 .header__address {
     justify-self: end;
-    margin-right: 38px;
+    padding-right: 30px;
 }
 
 .cover {
@@ -62,8 +62,8 @@
     flex-direction: column;
     padding-left: 50px;
     padding-right: 50px;
-    padding-bottom: 50.5px;
-    padding-top: 57px;
+    padding-bottom: 50px;
+    padding-top: 55px;
     position: relative;
 }
 
@@ -71,6 +71,7 @@
     position: absolute;
     inset: 0;
     background-color: rgba(0, 0, 0, 0.6);
+    pointer-events: none;
 }
 
 .cover__description {
@@ -91,7 +92,7 @@
     border: 1px solid #fff;
     text-transform: uppercase;
     color: #fff;
-    padding: 11.5px 31.5px;
+    padding: 11px 31px;
     font-size: 22px;
 }
 
@@ -106,7 +107,8 @@
 .cover__title {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 20px;
+    line-height: 1.15;
     color: #fff;
     font-size: 100px;
     text-transform: uppercase;
@@ -131,7 +133,6 @@
 }
 
 .aligned-text_center {
-    padding-left: 25px;
     text-align: center;
 }
 
@@ -193,7 +194,7 @@
     text-underline-offset: 2px;
     text-decoration: underline;
     text-decoration-skip-ink: none;
-    line-height: 120%;
+    line-height: 1.2;
 }
 
 .card__text {
@@ -230,8 +231,8 @@
 
 .about {
     display: grid;
-    grid-template-columns: 339px 1fr;
-    gap: 20px;
+    grid-template-columns: 334px 1fr;
+    gap: 25px;
     margin-bottom: 180px;
 }
 
@@ -271,13 +272,14 @@
     flex-direction: column;
     gap: 24px;
     font-size: 20px;
+    padding-right: 3px;
 }
 
 .footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
-    padding: 1px 50px 82px 50px;
+    padding: 1px 50px 82px;
 }
 
 .footer__menu {
@@ -296,7 +298,6 @@
 .footer__menu-list {
     list-style: none;
     font-size: 18px;
-    line-height: 22px;
 }
 
 .footer__social-list {
